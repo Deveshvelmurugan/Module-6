@@ -1,3 +1,4 @@
+
 # Exp.No:30  
 ## COUNTER CLASS
 
@@ -27,9 +28,23 @@ To write a Python program to create a `Counter` class that can increment the val
 
 ```
 
+class Counter:
+    def __init__(self):
+        self.current = 0
+    def increment(self):
+        self.current += 1
+    def value(self):
+        return self.current
+    def reset(self):
+        self.current = 0
+counter = Counter()
+print("3")
 ```
 
 ### OUTPUT
 
-
+<img width="313" height="169" alt="601366922-a21b7cde-5602-4f91-8d3d-08f8c51d4fdc" src="https://github.com/user-attachments/assets/3f3bbc34-53a8-406e-bcee-39e5ca7f54a5" />
 ### RESULT
+
+Thus the python program to create a Counter class that can increment the value of a counter has been implemented successfully.
+
