@@ -1,3 +1,4 @@
+
 # Exp.No:27  
 ## Operator Overloading
 
@@ -32,11 +33,24 @@ To write a Python program to perform division of two complex numbers using the b
 ### PROGRAM
 
 ```
+class Complex:
+    def __init__(self,real,imag):
+        self.real=real
+        self.imag=imag
+    def __add__(self,other):
+        real_part=self.real*other.real
+        imag_part=self.imag*other.imag
+        return(real_part,imag_part)
+obj1=Complex(1, 2)
+obj2=Complex(2, 3)
+print(obj1+obj2)
 
 ```
 
 ### OUTPUT
-
+<img width="447" height="241" alt="601367967-49d351f6-4396-46c6-8a76-6e1d4ef0332a" src="https://github.com/user-attachments/assets/ccc779c9-9782-4c6f-b3a6-db33cd7df4dd" />
 
 ### RESULT
+Thus, the program to overload the addition operator for complex numbers was executed successfully and the output was verified.
+
 
